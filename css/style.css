@@ -1,0 +1,198 @@
+@charset: "UTF-8";
+
+body{
+	background-color: #F0F0F0; /*背景色薄いグレー*/
+	color: #333; /*文字色濃いグレー*/
+	font-family:'Noto Sans JP', sans-serif;
+	font-size: 14px;
+	line-height:1.6; /*行間「1.6」*/
+	margin:0;
+}
+
+h1{
+	background-image:url(../img/header.jpg);
+	width:750px;
+	height:100px;
+	font-size:30px;
+	line-height:100px;
+	text-align:center;
+	margin: 0;
+}
+
+h2{
+	border-top:solid 1px #edf3f9;
+	border-bottom:solid 1px #edf3f9;
+	font-size:120%;
+	padding:5px;
+}
+
+/* 経歴を表でまとめる時に使う↓ */
+
+table{
+	font-size: 1em;
+	/*tableのボーダーと新たに設定するボーダーを一緒にする*/
+	border-collapse: collapse;
+	margin:30px auto; 
+	white-space: wrap;
+}
+
+td,th{
+	border:1px solid rgb(190,190,190);
+	vertical-align: center;
+	padding: 10px 20px 10px 10px;
+	text-align:left;
+	
+}
+
+th{
+	background-color:rgb(235,235,235);
+}
+
+
+#wrapper{
+	width: 750px; 
+	margin:0 auto;
+	background-color:#FFF;
+}
+
+/*ナビバー*/
+#nav{
+	list-style:none;
+	padding-left:0;
+	display:flex;
+	justify-content:space-around; 
+}
+
+#nav a{
+	border-radius: 5px;
+	display:block;
+	background-color:#e2ebf3;
+	color:black;
+	width:130px;
+	height:30px;
+	line-height:30px; /* 行の高さの定義：上下方向の中心に置く*/
+	margin:0 5px;
+	text-align:center;
+	text-decoration: none;
+
+}
+
+#nav a:hover{
+	background-color:rgba(108,211,247);
+	color:#fff;
+	transition: 0.2s ease-in-out;
+}
+
+#footer #nav a{
+	background:rgba(0,0,0,0.25);
+	color:#fff;
+}
+
+#footer #nav a:hover{
+	background:rgba(0,0,0);
+	color:#fff;
+	transition: 0.2s ease-in-out;
+}
+
+/*文章コンテンツ_共通*/
+#content{
+	margin:20px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+/*フッター＿共通*/
+#footer{
+	border-top:solid 1px #CCC;
+	background-color: #313944;
+	color: #FFF;
+	font-size:80%;
+	text-align:center;
+	padding:5px;
+}
+
+
+.col{
+	width:750px;
+}
+
+.box {
+  background-color: rgb(237, 242, 247);
+	width:750px;
+}
+.inner {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* photo全体*/
+.photo img{
+width:300px;
+height:300px;
+border-radius:50%;
+}
+
+.portfolio img{
+width:100px;
+height:100px;
+
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*.list::after {
+  content: "";
+  display: block;
+  width: 320px;
+  margin: 10px;
+}
+*/
+.item {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 30%;
+	border-radius:13px;
+  margin: 10px;
+}
+
+.item a {
+	color:#000;
+  display: block;
+	text-decoration:none;
+}
+
+.item a:hover{
+	background-color:rgba(108,211,247);
+	color:#fff;
+	border-radius:13px;
+	transition: 0.2s ease-in-out;
+}
+
+.item .photo img {
+  width: 80%;
+  height: auto;
+}
+
+.title{
+	justify-content: center;
+	text-align:center;
+}
+
+.text{
+	padding:0.8em 0.6em 0.7em;
+}
+
+
+.photo, .portfolio {
+	/*text-alignって書いてあるけど、text以外の要素でも使えるんだよ*/
+	text-align:center;
+	padding: 10px 0;/*上下の間隔を10px空けておく*/
+	
+}
+
+
